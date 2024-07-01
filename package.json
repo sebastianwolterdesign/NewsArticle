@@ -1,0 +1,43 @@
+{
+    "name": "news-article",
+    "version": "1.0.0",
+    "description": "Evaluate a News Article",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/server/index.js",
+        "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.dev.js",
+        "build-prod": "NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.prod.js",
+        "test": "jest",
+        "clean": "rm -rf dist"
+    },
+    "author": "Sebastian",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "node-fetch": "^2.6.1",
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "babel-loader": "^8.2.2",
+        "body-parser": "^1.19.0",
+        "chokidar": "^3.6.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "cors": "^2.8.5",
+        "css-loader": "^3.6.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "html-webpack-plugin": "^4.5.2",
+        "jest": "^26.6.3",
+        "rimraf": "^4.0.0",
+        "sass": "^1.32.8",
+        "sass-loader": "^10.1.1",
+        "style-loader": "^0.23.1",
+        "terser-webpack-plugin": "^4.2.3",
+        "webpack": "^4.47.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.2"
+    }
+}

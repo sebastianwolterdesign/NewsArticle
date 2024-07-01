@@ -1,0 +1,11 @@
+@import './varaiables.scss';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $primary-color;
+  color: $text-color;
+  text-align: center;
+  padding: $padding-medium 0;
+}
