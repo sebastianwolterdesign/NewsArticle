@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  entry: './src/client/index.js',
+  entry: path.resolve(__dirname, 'src', 'client', 'index.js'),
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -46,11 +46,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/client/views/index.html',
-      filename: './index.html',
+      template: path.resolve(__dirname, 'src', 'client', 'views', 'index.html'),
+      filename: 'index.html',
     }),
     new CleanWebpackPlugin({
-      dry: true,
+      dry: false,
       verbose: true,
       cleanStaleWebpackAssets: true,
       protectWebpackAssets: false,
